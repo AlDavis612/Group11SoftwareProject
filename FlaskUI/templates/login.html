@@ -4,6 +4,9 @@
 	<title></title>
 </head>
 <body>
+	{% if us %}
+		{{us}}
+	{% endif %}
 	<form action="/" method="post">
 		<input type="name" name="name">
 		<input type="password" name="pass">

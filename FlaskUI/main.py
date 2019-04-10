@@ -18,15 +18,16 @@ auth = firebase.auth()
 
 @app.route('/', methods=['Get', 'Post'])
 def login():
-    if request.method == 'POST':
-    	email = request.form['name']
-    	password = request.form['pass']
-    	try:
-    		auth.sign_in_with_email_and_password(email, password)
-    		return render_template("template.html")
-    	except:
-    		return 'Please cheack credentials'
-    return render_template('login.html')	 
+	unsuccessful = 'Invalid Login'
+	if request.method == 'POST':
+		email = request.form['name']
+		password = request.form['pass']
+		try:
+			auth.sign_in_with_email_and_password(email, password)
+			return render_template("template.html")
+		except:
+			return render_template('login.html', us=unsuccessful)
+	return render_template('login.html')	 
 
 @app.route('/main')
 def main():
