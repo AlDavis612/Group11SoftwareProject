@@ -7,13 +7,35 @@ data we will be collecting
 
 */
 
-CREATE TABLE ranked_images
+CREATE TABLE Images
 (
-	imageId			INTEGER PRIMARY KEY;
-	rank 			INTEGER;
-	tags 			CHAR;
+	imageId			INT PRIMARY KEY;
+	rankId 			INT;
+	category 		VARCHAR(255);
+    imagePath       VARCHAR(255);
 	dateTagged 		DATE;
 
+);
+
+CREATE TABLE Ranks 
+(
+    rankId          INT;
+    description     VARCHAR(255);
+);
+
+CREATE TABLE Users
+(
+    userId          INT PRIMARY KEY;
+    firstName       VARCHAR(255);
+    lastName        VARCHAR(255);
+    password        VARCHAR(255);
+    role            VARCHAR(255);
+);
+
+CREATE TABLE Role
+(
+    roleId          INT PRIMARY KEY;
+    roleName        VARCHAR(255);
 );
 
 /*
@@ -24,14 +46,14 @@ This code is to insert Dummy data into the DB table
 
 */
 
-INSERT INTO ranked_images
-VALUES (12345, 5, 'Sports');
+INSERT INTO Images
+VALUES (12345, 'Mizzou_Football', 123, [path to image], 'Sports');
 
-INSERT INTO ranked_images
-VALUES (12346, 2, 'Community');
+INSERT INTO Ranks
+VALUES ('Picture taken at Mizzou football game');
 
-INSERT INTO ranked_images
-VALUES (12347, 1, 'Nature');
+INSERT INTO Users
+VALUES ('Tom', 'Hatherford', 'Hello1234', 'CEO');
 
-INSERT INTO ranked_images
-VALUES (12348, 3, 'Campus');
+INSERT INTO Role
+VALUES (123, 'CEO');
