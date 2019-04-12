@@ -1,1 +1,14 @@
-Language RequirementsLanguages:* Flask – Python* HTML* CSS* SQLHow we will learn them:* We have had experience with some of these languages, and will use resources on the internet as well as our classmates.* Ex)o An example of this would be how we deployed our website to a server. We did not know how to so we looked it up online and found out how to deploy a flask app to a google cloud server and after trial and error we figured it out and deployed it.
+Language Requirements
+Languages:
+* Flask √ê Python
+* HTML
+* CSS
+* SQL
+How we will learn them:
+* We have had experience with some of these languages, and 
+  will use resources on the internet as well as our classmates.
+* Ex)
+o An example of this would be how we deployed our website to a server.
+  We did not know how to so we looked it up online and found out how to
+  deploy a flask app to a google cloud server and after trial and 
+  error we figured it out and deployed it.
