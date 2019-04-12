@@ -41,7 +41,7 @@ The images will be stored in groups ranking from 1 – 5, 1 being the best quali
 4. Editor can pick a package to upload to the database
 
 # Use Case:
-![Diagram](UseCaseDiagram2.png)
+![Diagram](EditorUseCaseUpdate.png)
 
 # Dependent Use Cases:
 Image Processing Use Case 
