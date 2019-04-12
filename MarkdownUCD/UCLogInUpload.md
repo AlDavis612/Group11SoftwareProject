@@ -42,7 +42,7 @@ Reviewed by Grant Harrison and Xin Cui
 + Navigate to the photos on the device, choose which category of photo they are, and click "Upload"
 
 ## A use case diagram
-![Diagram](LogIn_UploadUCD.png)
+![Diagram](LogIn_UploadUCDUpdate.png)
 
 ## Dependent Use Cases
 + N/A
