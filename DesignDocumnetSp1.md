@@ -9,6 +9,7 @@
 * Photos to be uploaded
 * Google cloud server (Web UI)
 * AWS server (Database)
+* Flask
 
 ### Functions
 * Log in
