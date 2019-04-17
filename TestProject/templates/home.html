@@ -2,13 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Flask Tutorial</title>
+    <title>Image Processor</title>
   </head>
   <body>
     {% extends "template.html" %}
     {% block content %}
-    <h1> My First Try Using Flask </h1>
-    <p> Flask is Fun </p>
+    <h1> Image Processor </h1>
+    <p>
+        <label for="file">Choose a file:</label>
+        <input type="file" name="file" id="file" class="inputfile" />
+        <input type="submit" value="Process">
+    </p>
     
     {% endblock %}
   </body>
