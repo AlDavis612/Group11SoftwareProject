@@ -13,6 +13,8 @@ CREATE TABLE Images
 	rankId 			INT;
 	category 		VARCHAR(255);
     imagePath       VARCHAR(255);
+	AestheticScore   FLOAT(2,2);
+        TechnicalScore  FLOAT(2,2);
 	dateTagged 		DATE;
 
 );
@@ -47,7 +49,7 @@ This code is to insert Dummy data into the DB table
 */
 
 INSERT INTO Images
-VALUES (12345, 'Mizzou_Football', 123, [path to image], 'Sports');
+VALUES (12345, 'Mizzou_Football', 123, [path to image],3.33,4.44, 'Sports');
 
 INSERT INTO Ranks
 VALUES ('Picture taken at Mizzou football game');
