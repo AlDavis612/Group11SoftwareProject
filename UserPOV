@@ -1,14 +1,16 @@
 User Point of View Paragraphs
 
-  ( Photographer ) On first page of our application the user will be promted with 
-  a login page where they will either enter existing credientials or sign up. Once 
-  the user is signed into the application they will be directed to the home page 
-  where they will be able to see more about us (the developers) and be given the 
-  choice to process the images. They will see the button that says "Get Started!", 
-  which will forward the user to our upload page. 
-  
-  The upload page will prompt the user to choose the file they want to upload for review. 
-  The application will then run through and grade the images, putting the satisfactory images 
-  into a differnt folder from the other photos. The user can now review the images or sign out 
-  of the application.
-  
+  ( Photographer/Editor ) On the first page of our application, the user will be prompted 
+  with a login page where they will either enter existing credentials or sign up. Once the 
+  user is signed into the application they will be directed to the home page where they will
+  be able to see more about us (the developers) and be given the choice to process the images. 
+  They will see the button that says "Get Started!", which will forward the user to our upload 
+  page. 
+    The upload page will prompt the user to choose the file they want to upload for review.
+  The application will then run through and grade the images, and display them for the user
+  to see, the image along with the newly aquired rank. The user can now review the images to see if 
+  the ratings are satisfactory, the user will then have the option of deleting the images that
+  fall below a set rank they choose. If the user decides to delete the images they will be removed 
+  from the view and only the images higher than the value they choose as the highest possible to 
+  keep will remain. From here the user can view there refined images and then push them to a file. 
+  The user will then download the file and sign out of the application.
