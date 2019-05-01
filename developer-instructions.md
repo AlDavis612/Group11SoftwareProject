@@ -12,6 +12,7 @@ AWS server config
   2.Install docker on AWS server
 
   3.Install JDK
+  
     3.1 download jdk1.8，unzip jdk to path：/usr/java/jdk
       tar -xvf jdk-8u131-linux-x64.tar.gz -C /usr/java/jdk
     3.2 config environment path for jdk:
@@ -26,6 +27,7 @@ AWS server config
     3.3check jdk config ok:
       java -version
   4.Install Tomcat Apache
+  
     4.1 download Tomcat8 and unzip to :
       tar -xvf apache-tomcat-8.5.14.tar.gz -C /usr/java/tomcat/
     4.2 edit tomcat8 bin/setclasspath.sh file, add two lines for jdk config at the bottom of this file
