@@ -68,7 +68,11 @@ AWS server config
        export JRE_HOME=/usr/java/jdk/jdk1.8.0_131/jre
   7.Database configuration
   
-      7.1
+      7.1 download mysql 
+      7.2 install mysql
+        rpm -ivh MySQL-server-5.6.15-1.el6.x86_64.rpm
+      7.3 start mysql
+        service mysql start
   8.Webcode deploy
   
       8.1 download RJI webcode
