@@ -76,4 +76,7 @@ AWS server config
       8.2 upload webcode to AWS server
           use winSCP tool to upload code to path: /usr/java/tomcat/webapps
       8.3 create database and tables in mysql
-          use 
+          use databaseschema file:
+          https://github.com/AlDavis612/Group11SoftwareProject/blob/master/DatabaseSchema/DatabaseCode.sql
+      8.4 start tomcat
+          ./startup.sh
