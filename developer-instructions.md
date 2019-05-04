@@ -30,13 +30,16 @@ AWS server config
       make configration effective：
         source ~/.bash_profile
   2.Install docker on AWS server
+  
       follow the steps in the link
       https://docs.docker.com/install/linux/docker-ce/centos/
   3.Clone algorithm to server
+  
       3.1 clone algorithm to local machine then upload the algorithm to AWS server(If you have installed git on AWS server,you can download the algorithm directly from github)
         git clone https://github.com/idealo/image-quality-assessment
       3.2upload algorithm to AWS server us winSCP tool
   4.Serving NIMA with TensorFlow Serving
+  
     Follow the steps in the link:
       https://github.com/idealo/image-quality-assessment
       Just follow the Serving NIMA with TensorFlow Serving steps
