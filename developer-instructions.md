@@ -69,5 +69,8 @@ AWS server config
   7.Database configuration
   
   8.Webcode deploy
-    git clone 
+  
+      8.1 download RJI webcode
+        git clone https://github.com/AlDavis612/Group11SoftwareProject/tree/master/RJIWebCode
+        
 
