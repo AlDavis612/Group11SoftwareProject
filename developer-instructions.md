@@ -68,9 +68,12 @@ AWS server config
        export JRE_HOME=/usr/java/jdk/jdk1.8.0_131/jre
   7.Database configuration
   
+      7.1
   8.Webcode deploy
   
       8.1 download RJI webcode
         git clone https://github.com/AlDavis612/Group11SoftwareProject/tree/master/RJIWebCode
-        
-
+      8.2 upload webcode to AWS server
+          use winSCP tool to upload code to path: /usr/java/tomcat/webapps
+      8.3 create database and tables in mysql
+          use 
