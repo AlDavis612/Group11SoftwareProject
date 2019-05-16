@@ -109,6 +109,8 @@ if (!$conn) {
 }
 echo "Connected successfully";
 
+$myRange = $_POST['myRange'];
+
 $total = count($_FILES['filesToUpload']['name']);
 $target_dir = "uploads/";
 echo "<td style='font-size:1.25em;text-align:center;'>". $total . " files";
@@ -172,12 +174,13 @@ if ($uploadOk == 0) {
                 $aesthetic = shell_exec("bash ./getScoreAesthetic.sh $filename");
 				$aesthetic = substr($aesthetic,-7,-3);
                 		//echo  "aesthetic ". $aesthetic . " / 10. ";
-
+		if ( $aesthetic >= $myRange && $technical >= $myRange ){
 		echo "<table border-style=none  width='100%' >";
                 echo "<td width='350'>" . $title . "</td>";
                 echo "<td><img src='/uploads/".$filename."'alt='".$filename."' width='200' height='150'></td>";
                 echo "<td style='font-size:1.25em;text-align:center;'> <- technical score is ". $technical . " / 10 and aesthestic score is ". $aesthetic . " / 10 ";
 		echo "</table>";
+		}
             }
             else {
                 echo "Sorry, there was an error uploading your file. ";

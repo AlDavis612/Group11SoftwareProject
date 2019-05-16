@@ -73,7 +73,7 @@
 
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
             <h1 class="text-white font-weight-light text-uppercase font-weight-bold">Image Processing Alorithm</h1>
-            <p class="breadcrumb-custom" ><a href="blog.html">Home</a> <span class="mx-2">&gt;</span> <span>Image Processing</span></p>
+            <p class="breadcrumb-custom" ><a href="home.html">Home</a> <span class="mx-2">&gt;</span> <span>Image Processing</span></p>
           </div>
         </div>
       </div>
@@ -91,6 +91,28 @@
           </form>
         </div>
       </div>
+	<div class="textcontainer">
+         <div class="row align-items-center justify-content-center text-center">
+                <p>Please select the minimum rank to be displayed: </p>
+	</div>
+	</div>
+	<div class="slidecontainer">
+	 <div class="row align-items-center justify-content-center text-center">
+           <form action="upload.php" method="post">
+		<input type="range" min="1" max="10" value="1" class="slider" id="myRange">
+                <p>Value: <span id="demo"></span></p>
+           </form>
+	</div>
+        <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+        output.innerHTML = this.value;
+        }
+        </script>
+	</div>
     </div>
 
     
